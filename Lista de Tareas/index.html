@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tareas</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  
+    <div class="list roundBorder">
+      <H1>LISTA DE TAREAS</H1>
+      <div class="date">
+          <div class="dateRight">
+              <div id="dateNumber"></div>
+              <div class="milez">
+                  <div id="dateMonth"></div>
+                  <div id="dateYear"></div>
+              </div>
+          </div>
+          <div id="dateText"></div>
+      </div>
+      <form onsubmit="addNewTask(event)">
+        <input type="text" name="taskText", autocomplete="off", placeholder="Escriba su tarea" class="roundBorder">
+        <button type="submit" class="addTaskButton">+</button>
+        <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>
+      </form>
+      <div id="task-container"></div>
+  </div>
+    <script src="main.js"></script>
+  </body>
+</html>
