@@ -1,0 +1,58 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgba(212,228,239,1);
+}
+
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: #151719;
+    left: -200px;
+    transition: all 500ms;
+}
+
+#sidebar.active{ /* Despues en el js se la damos para poder ver el sidebar */
+  left: 0;
+}
+
+#sidebar ul img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+#sidebar ul li {
+    color: rgba(230, 230, 230, .9);
+    text-align: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
+}
+
+#sidebar .toggle-btn { 
+ position: absolute;
+  left: 230px;
+  top:20px;
+  cursor: pointer;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid #000;
+}
+
+.inst {
+    width: 20%;
+}
+
+.twit {
+    width: 20%;
+}
