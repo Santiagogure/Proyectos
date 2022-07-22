@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.Contenedor{
+    position: relative;
+    width: 500px;
+    margin: 2em auto;
+}
+
+.tabs{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.tabs li {
+    border: 1px solid #ccc;
+    line-height: 3;
+    padding: 0 1em;
+    margin-right: 1px;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    top: 1px;
+    z-index: 0;
+    border-bottom: none;
+}
+
+.tabs_item.active{
+    background: white;
+    z-index : 20;
+}
+
+
+.panels {
+  border: 1px solid #ccc;
+  padding: 1em;
+  position: relative;
+  z-index: 10;
+
+}
+
+.panel-items {
+  position: absolute;
+  left: -1000%;
+}
+
+.panel-items.active {
+    position: relative;
+  left: 0;
+}
